@@ -26,10 +26,10 @@
       <div class="collapse navbar-collapse justify-content-between" id="toggle">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="02_home.html">Home</a>
+            <a class="nav-link" href="02_home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="03_community.html">Community</a>
+            <a class="nav-link active" href="03_community.html">Community</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
@@ -71,8 +71,8 @@
   </nav>
 
   <h2 class="fw-bold text-center py-4">Community</h2>
+  <!-- 모바일에서 보이는거-->
   <div class="container">
-    <!-- 모바일에서 보이는거-->
     <div class="row d-md-none mb-3">
       <ul class="list-group px-0">
         <li class="list-group-item"><a href="#">Boxoffice</a></li>
@@ -121,6 +121,12 @@
           <p class="card-text">user</p>
           <p class="card-text">1 minute ago</p>
         </div>
+      </div>
+    </div>
+
+    <div class="row d-md-none">
+      <div class="px-0 pb-5">
+        <button class="btn btn-primary w-100" onclick="location.href='04_form.html';">Create</button>
       </div>
     </div>
   </div>
@@ -202,7 +208,7 @@
     </div>
   </div>
 
-  <footer class="text-bg-dark text-center py-5">
+  <footer class="text-bg-dark text-center py-5 mt-3">
     Web-bootstrap PJT, by 조본희, 최보영
   </footer>
 
