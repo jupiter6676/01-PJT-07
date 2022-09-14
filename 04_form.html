@@ -10,7 +10,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="02_home.html">
+      <a class="navbar-brand" href="index.html">
         <img src="images/logo.png" alt="" style="height: 64px;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle">
@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse justify-content-between" id="toggle">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="02_home.html">Home</a>
+            <a class="nav-link active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="03_community.html">Community</a>
@@ -67,7 +67,32 @@
 
   <h2 class="fw-bold text-center py-4">Review</h2>
   <div class="container">
-    
+    <form>
+      <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example">
+        <option selected>영화 선택하기</option>
+        <option value="1">쇼생크 탈출</option>
+        <option value="2">죽은 시인의 사회</option>
+        <option value="3">다크나이트 라이즈</option>
+        <option value="4">그랜드 부다페스트 호텔</option>
+        <option value="5">her</option>
+        <option value="6">위대한 쇼맨</option>
+      </select>
+
+      <div class="mb-3">
+        <label for="title" class="col-form-label">리뷰 제목</label>
+        <input type="text" class="form-control" id="title" placeholder="리뷰를 작성해주세요.">
+      </div>
+
+      <div class="mb-3">
+        <label for="body" class="col-form-label">리뷰 내용</label>
+        <textarea type="text" class="form-control" id="body" rows="3"></textarea>
+      </div>
+
+      <div class="mb-5">
+        <input type="button" class="btn btn-outline-primary" onclick="location.href='03_community.html';" value="Submit">
+        <!-- <button class="btn btn-outline-primary" onclick="location.href='03_community.html';">Creates</button> -->
+      </div>
+    </form>
   </div>
   
   <footer class="text-bg-dark text-center py-5">
